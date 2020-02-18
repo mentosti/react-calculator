@@ -31,3 +31,27 @@
     transform: rotate(360deg);
   }
 }
+
+.result {
+  /* height: 100px; */
+  /* width: 100%; */
+  /* background-color: #8DB5F2; */
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 100px;
+  line-height: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #8DE8F2;
+}
+
+.button-list {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
+}
