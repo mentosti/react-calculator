@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Operator(props) {
-    return (
-        <div className="button">
-            {props.children}
-        </div>
-    )
+	return <div className="button">{props.children}</div>;
 }
 
-export default Operator
+export default Operator;
