@@ -14,12 +14,10 @@ class App extends React.Component {
 
 	onClickNumber = num => {
 		this.setState(prevState => {
-			console.log(prevState.result)
 			return {
 				result: prevState.result * 10 + num
 			};
-		},()=>console.log(this.state.result));
-		
+		});
 	};
 
 	render() {
