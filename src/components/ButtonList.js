@@ -3,20 +3,22 @@ import Number from "./Number";
 import Operator from "./Operator";
 
 function ButtonList(props) {
+	
+
+	const numbers = Array.from(Array(10).keys());
+	const listNumbers = numbers.map(n => (
+		<Number onClickNumber={props.onClickNumber} key={n} number={n}></Number>
+	));
+
 	return (
 		<div className="button-list">
-			<Number onClickNumber={props.onClickNumber}>7</Number>
-			<Number onClickNumber={props.onClickNumber}>8</Number>
-			<Number onClickNumber={props.onClickNumber}>9</Number>
-			<Number onClickNumber={props.onClickNumber}>4</Number>
-			<Number onClickNumber={props.onClickNumber}>5</Number>
-			<Number onClickNumber={props.onClickNumber}>6</Number>
-			<Number onClickNumber={props.onClickNumber}>1</Number>
-			<Number onClickNumber={props.onClickNumber}>2</Number>
-			<Number onClickNumber={props.onClickNumber}>3</Number>
-			<Operator>-</Operator>
-			<Number onClickNumber={props.onClickNumber}>0</Number>
-			<Operator>.</Operator>
+			{listNumbers}
+			<Operator operator="+/-"></Operator>
+			<Operator operator="."></Operator>
+			<Operator operator="X"></Operator>
+			<Operator operator="-"></Operator>
+			<Operator operator="+" onClickOperator={props.onClickOperator}></Operator>
+			<Operator operator="=" onClickOperator={props.onClickOperator}></Operator>
 		</div>
 	);
 }

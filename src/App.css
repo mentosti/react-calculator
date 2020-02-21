@@ -36,7 +36,8 @@
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 100px;
-	line-height: 1;
+  line-height: 1;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
 
 .button-list {
 	display: grid;
-	grid-template-columns: 100px 100px 100px;
+	grid-template-columns: 100px 100px 100px 100px;
 	grid-gap: 10px;
 	background-color: #fff;
 	color: #444;

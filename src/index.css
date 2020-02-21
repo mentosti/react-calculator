@@ -23,6 +23,6 @@ code {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover, .button.hover {
   background-color: #6153d9;
 }
